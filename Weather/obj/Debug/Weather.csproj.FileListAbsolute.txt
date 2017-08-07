@@ -1,0 +1,30 @@
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\Weather\bin\Debug\Weather.exe.config
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\Weather\bin\Debug\Weather.xml
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\Weather\bin\Debug\Weather.exe
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\Weather\bin\Debug\Weather.pdb
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\Weather\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\Weather\bin\Debug\TextBoxControl.dll
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\Weather\bin\Debug\TextBoxControl.pdb
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\Weather\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\Weather\obj\Debug\Weather.csprojResolveAssemblyReference.cache
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\Weather\obj\Debug\Weather.FiveDays.resources
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\Weather\obj\Debug\Weather.Form1.resources
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\Weather\obj\Debug\Weather.Properties.Resources.resources
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\Weather\obj\Debug\Weather.csproj.GenerateResource.Cache
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\Weather\obj\Debug\Weather.exe
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\Weather\obj\Debug\Weather.pdb
+C:\Users\Waldes\Desktop\Projekty\Weather App\w55162\Weather\Weather\bin\Debug\Weather.exe.config
+C:\Users\Waldes\Desktop\Projekty\Weather App\w55162\Weather\Weather\bin\Debug\Weather.xml
+C:\Users\Waldes\Desktop\Projekty\Weather App\w55162\Weather\Weather\obj\Debug\Weather.exe
+C:\Users\Waldes\Desktop\Projekty\Weather App\w55162\Weather\Weather\obj\Debug\Weather.pdb
+C:\Users\Waldes\Desktop\Projekty\Weather App\w55162\Weather\Weather\obj\Debug\Weather.csprojResolveAssemblyReference.cache
+C:\Users\Waldes\Desktop\Projekty\Weather App\w55162\Weather\Weather\obj\Debug\Weather.FiveDays.resources
+C:\Users\Waldes\Desktop\Projekty\Weather App\w55162\Weather\Weather\obj\Debug\Weather.Form1.resources
+C:\Users\Waldes\Desktop\Projekty\Weather App\w55162\Weather\Weather\obj\Debug\Weather.Properties.Resources.resources
+C:\Users\Waldes\Desktop\Projekty\Weather App\w55162\Weather\Weather\obj\Debug\Weather.csproj.GenerateResource.Cache
+C:\Users\Waldes\Desktop\Projekty\Weather App\w55162\Weather\Weather\bin\Debug\Weather.exe
+C:\Users\Waldes\Desktop\Projekty\Weather App\w55162\Weather\Weather\bin\Debug\Weather.pdb
+C:\Users\Waldes\Desktop\Projekty\Weather App\w55162\Weather\Weather\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Waldes\Desktop\Projekty\Weather App\w55162\Weather\Weather\bin\Debug\TextBoxControl.dll
+C:\Users\Waldes\Desktop\Projekty\Weather App\w55162\Weather\Weather\bin\Debug\TextBoxControl.pdb
+C:\Users\Waldes\Desktop\Projekty\Weather App\w55162\Weather\Weather\bin\Debug\Newtonsoft.Json.xml

@@ -1,0 +1,13 @@
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\TextBoxControl\bin\Debug\TextBoxControl.dll
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\TextBoxControl\bin\Debug\TextBoxControl.pdb
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\TextBoxControl\obj\Debug\TextBoxControl.LabelsControl.resources
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\TextBoxControl\obj\Debug\TextBoxControl.csproj.GenerateResource.Cache
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\TextBoxControl\obj\Debug\TextBoxControl.dll
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\TextBoxControl\obj\Debug\TextBoxControl.pdb
+C:\Users\Waldes\Desktop\Projekty\Weather App\w55162\Weather\TextBoxControl\bin\Debug\TextBoxControl.dll
+C:\Users\Waldes\Desktop\Projekty\Weather App\w55162\Weather\TextBoxControl\bin\Debug\TextBoxControl.pdb
+C:\Users\Waldes\Desktop\Projekty\Weather App\w55162\Weather\TextBoxControl\obj\Debug\TextBoxControl.csprojResolveAssemblyReference.cache
+C:\Users\Waldes\Desktop\Projekty\Weather App\w55162\Weather\TextBoxControl\obj\Debug\TextBoxControl.LabelsControl.resources
+C:\Users\Waldes\Desktop\Projekty\Weather App\w55162\Weather\TextBoxControl\obj\Debug\TextBoxControl.csproj.GenerateResource.Cache
+C:\Users\Waldes\Desktop\Projekty\Weather App\w55162\Weather\TextBoxControl\obj\Debug\TextBoxControl.dll
+C:\Users\Waldes\Desktop\Projekty\Weather App\w55162\Weather\TextBoxControl\obj\Debug\TextBoxControl.pdb

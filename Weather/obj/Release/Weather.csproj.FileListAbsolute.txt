@@ -1,0 +1,11 @@
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\Weather\bin\Release\Weather.exe.config
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\Weather\bin\Release\Weather.exe
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\Weather\bin\Release\Weather.pdb
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\Weather\bin\Release\Newtonsoft.Json.dll
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\Weather\bin\Release\Newtonsoft.Json.xml
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\Weather\obj\Release\Weather.Form1.resources
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\Weather\obj\Release\Weather.Properties.Resources.resources
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\Weather\obj\Release\Weather.csproj.GenerateResource.Cache
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\Weather\obj\Release\Weather.exe
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\Weather\obj\Release\Weather.pdb
+C:\Users\Waldes\Documents\Visual Studio 2015\Projects\WF\Weather\Weather\obj\Release\Weather.csprojResolveAssemblyReference.cache

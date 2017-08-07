@@ -47,6 +47,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.labelsControl1 = new TextBoxControl.LabelsControl();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -196,7 +197,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.Location = new System.Drawing.Point(515, 172);
+            this.label11.Location = new System.Drawing.Point(24, 311);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(75, 22);
             this.label11.TabIndex = 10;
@@ -206,7 +207,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(515, 213);
+            this.label12.Location = new System.Drawing.Point(24, 349);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(67, 22);
             this.label12.TabIndex = 11;
@@ -250,12 +251,23 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // labelsControl1
+            // 
+            this.labelsControl1.Location = new System.Drawing.Point(516, 141);
+            this.labelsControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelsControl1.Name = "labelsControl1";
+            this.labelsControl1.Size = new System.Drawing.Size(166, 80);
+            this.labelsControl1.Sunrise = "label1";
+            this.labelsControl1.Sunset = "label2";
+            this.labelsControl1.TabIndex = 17;
+            // 
             // Form1
             // 
             this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 411);
+            this.Controls.Add(this.labelsControl1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label13);
@@ -307,6 +319,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button button2;
+        private TextBoxControl.LabelsControl labelsControl1;
     }
 }
 

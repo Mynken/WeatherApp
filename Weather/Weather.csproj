@@ -65,6 +65,8 @@
     <Compile Include="FiveDays.Designer.cs">
       <DependentUpon>FiveDays.cs</DependentUpon>
     </Compile>
+    <Compile Include="FiveDaysWeather\Data.cs" />
+    <Compile Include="FiveDaysWeather\FiveDays.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +76,9 @@
     <Compile Include="Entities\OpenWeather.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FiveDays.resx">
+      <DependentUpon>FiveDays.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,6 +138,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\winter_day.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TextBoxControl\TextBoxControl.csproj">
+      <Project>{B757AD61-DD59-4E4A-A3E1-4B900DE282C3}</Project>
+      <Name>TextBoxControl</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

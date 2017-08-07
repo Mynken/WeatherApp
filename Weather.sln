@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather", "Weather\Weather.csproj", "{C8D3BB6E-5BE3-4017-B968-D896E271EEB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherTest", "WeatherTest\WeatherTest.csproj", "{0EF1039E-B200-4312-8DD6-9ABDE8140ECC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextBoxControl", "TextBoxControl\TextBoxControl.csproj", "{B757AD61-DD59-4E4A-A3E1-4B900DE282C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{C8D3BB6E-5BE3-4017-B968-D896E271EEB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8D3BB6E-5BE3-4017-B968-D896E271EEB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8D3BB6E-5BE3-4017-B968-D896E271EEB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EF1039E-B200-4312-8DD6-9ABDE8140ECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EF1039E-B200-4312-8DD6-9ABDE8140ECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EF1039E-B200-4312-8DD6-9ABDE8140ECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EF1039E-B200-4312-8DD6-9ABDE8140ECC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B757AD61-DD59-4E4A-A3E1-4B900DE282C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B757AD61-DD59-4E4A-A3E1-4B900DE282C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B757AD61-DD59-4E4A-A3E1-4B900DE282C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B757AD61-DD59-4E4A-A3E1-4B900DE282C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

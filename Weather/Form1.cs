@@ -16,6 +16,7 @@ using System.Configuration;
 using System.Data.SqlClient;
 using Microsoft.Win32;
 using System.Reflection;
+using Weather.FiveDaysWeather;
 
 namespace Weather
 {
@@ -36,7 +37,8 @@ namespace Weather
                 item.Parent = pictureBox1;
                 item.BackColor = Color.Transparent;
             }
-
+            labelsControl1.Parent = pictureBox1;
+            labelsControl1.BackColor = Color.Transparent;
             checkBox1.Parent = pictureBox1;
             checkBox1.BackColor = Color.Transparent;
             #endregion
@@ -68,7 +70,7 @@ namespace Weather
             }
             return true;
         }
-    public async Task<string> GetWeatherForCityAsync(string city)
+        public async Task<string> GetWeatherForCityAsync(string city)
         {
             WebRequest request = WebRequest.Create($"http://api.openweathermap.org/data/2.5/weather?q={city}&APPID=133f53a4ef2155e4c0e5054102d7b8b1");
             request.Method = "POST";
@@ -122,6 +124,7 @@ namespace Weather
             {
                 item.ForeColor = color;
             }
+            labelsControl1.ForeColor = color;
         }
         
         public void GetBackGroundImage(string image)
@@ -187,67 +190,76 @@ namespace Weather
             }
         }
         
-        public void LoadToDb()
-        {
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=Weather;Integrated Security=True; MultipleActiveResultSets=True";
+        //public void LoadToDb()
+        //{
+        //    try
+        //    {
+        //        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=Weather;Integrated Security=True; MultipleActiveResultSets=True";
 
-            string sqlInsert = $"INSERT INTO Weather (City, Description, Temperature, Status, Wspeed, Wdirection, Wet, Pressure, Sunrise, Sunset)" +
-                    $" VALUES ('{label8.Text.ToString()}', '{label2.Text.ToString()}', '{label3.Text.ToString()}', '{label1.Text.ToString()}', " +
-                    $"'{label6.Text.ToString()}', '{label7.Text.ToString()}', '{label4.Text.ToString()}', " +
-                    $"'{label5.Text.ToString()}', '{label11.Text.ToString()}', '{label12.Text.ToString()}')";
+        //        string sqlInsert = $"INSERT INTO Weather (City, Description, Temperature, Status, Wspeed, Wdirection, Wet, Pressure, Sunrise, Sunset)" +
+        //                $" VALUES ('{label8.Text.ToString()}', '{label2.Text.ToString()}', '{label3.Text.ToString()}', '{label1.Text.ToString()}', " +
+        //                $"'{label6.Text.ToString()}', '{label7.Text.ToString()}', '{label4.Text.ToString()}', " +
+        //                $"'{label5.Text.ToString()}', '{label11.Text.ToString()}', '{label12.Text.ToString()}')";
 
-            string sqlRead = "SELECT * FROM Weather WHERE Id = (SELECT MAX(Id) FROM Weather)";
+        //        string sqlRead = "SELECT * FROM Weather WHERE Id = (SELECT MAX(Id) FROM Weather)";
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                connection.Open();
-                SqlCommand command = new SqlCommand(sqlRead, connection);
-                SqlDataReader reader = command.ExecuteReader();
-                if (reader.HasRows) // if data exsist
-                {
-                    reader.Read();
-                    if (label8.Text.ToString() == reader["City"].ToString() && label3.Text.ToString() == reader["Temperature"].ToString() && label1.Text.ToString() == reader["Status"].ToString())
-                    {
-                        reader.Close();
-                    }
-                    else
-                    {
-                        SqlCommand command2 = new SqlCommand(sqlInsert, connection);
-                        command2.ExecuteNonQuery();                  
-                    }
-                    reader.Close();
-                }
-               
-            }
-        }
+        //        using (SqlConnection connection = new SqlConnection(connectionString))
+        //        {
+        //            //   connection.Open();
+        //            SqlCommand command = new SqlCommand(sqlRead, connection);
+        //            SqlDataReader reader = command.ExecuteReader();
+        //            if (reader.HasRows) // if data exsist
+        //            {
+        //                reader.Read();
+        //                if (label8.Text.ToString() == reader["City"].ToString() && label3.Text.ToString() == reader["Temperature"].ToString() && label1.Text.ToString() == reader["Status"].ToString())
+        //                {
+        //                    reader.Close();
+        //                }
+        //                else
+        //                {
+        //                    SqlCommand command2 = new SqlCommand(sqlInsert, connection);
+        //                    command2.ExecuteNonQuery();
+        //                }
+        //                reader.Close();
+        //            }
+
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+
+        //        MessageBox.Show(ex.ToString());
+        //    }
+            
+        //}
         
-        public void ReadFromDb()
-        {
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=Weather;Integrated Security=True";
-            string sqlExpression = "SELECT * FROM Weather WHERE Id = (SELECT MAX(Id) FROM Weather)";
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                connection.Open();
-                SqlCommand command = new SqlCommand(sqlExpression, connection);
-                SqlDataReader reader = command.ExecuteReader();
-                if (reader.HasRows) // if data exsist
-                {
-                    reader.Read();
-                    label8.Text = reader["City"].ToString();
-                    label2.Text = reader["Description"].ToString();
-                    label3.Text = reader["Temperature"].ToString();
-                    label1.Text = reader["Status"].ToString();
-                    label6.Text = reader["Wspeed"].ToString();
-                    label7.Text = reader["Wdirection"].ToString();
-                    label4.Text = reader["Wet"].ToString();
-                    label5.Text = reader["Pressure"].ToString();
-                    label11.Text = reader["Sunrise"].ToString();
-                    label12.Text = reader["Sunset"].ToString();
-                }
-                GetBackGroundImage(label1.Text);
-                reader.Close();
-            }
-        }
+        //public void ReadFromDb()
+        //{
+        //    string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=Weather;Integrated Security=True";
+        //    string sqlExpression = "SELECT * FROM Weather WHERE Id = (SELECT MAX(Id) FROM Weather)";
+        //    using (SqlConnection connection = new SqlConnection(connectionString))
+        //    {
+        //        connection.Open();
+        //        SqlCommand command = new SqlCommand(sqlExpression, connection);
+        //        SqlDataReader reader = command.ExecuteReader();
+        //        if (reader.HasRows) // if data exsist
+        //        {
+        //            reader.Read();
+        //            label8.Text = reader["City"].ToString();
+        //            label2.Text = reader["Description"].ToString();
+        //            label3.Text = reader["Temperature"].ToString();
+        //            label1.Text = reader["Status"].ToString();
+        //            label6.Text = reader["Wspeed"].ToString();
+        //            label7.Text = reader["Wdirection"].ToString();
+        //            label4.Text = reader["Wet"].ToString();
+        //            label5.Text = reader["Pressure"].ToString();
+        //            label11.Text = reader["Sunrise"].ToString();
+        //            label12.Text = reader["Sunset"].ToString();
+        //        }
+        //        GetBackGroundImage(label1.Text);
+        //        reader.Close();
+        //    }
+        //}
         
         public string GetLabels(OpenWeather Ow, DateTime sunrise, DateTime sunset)
         {
@@ -328,25 +340,33 @@ namespace Weather
             label8.Text = " " + Ow.name.ToString() + " (" + Ow.sys.country.ToString() + ")";
 
             label11.Text = "Sunrise at  " + sunrise.ToString("HH:mm");
-            label12.Text = "Sunset at  " + sunset.ToString("HH:mm");
-           
+           //   label12.Text = "Sunset at  " + sunset.ToString("HH:mm");
+
+            labelsControl1.Sunrise = "Sunrise at  " + sunrise.ToString("HH:mm");
+            labelsControl1.Sunset = "Sunset at  " + sunset.ToString("HH:mm");
             return null;
         }
 
-        
+
+        public string GetLocation()
+        {
+            var locationResponse = new WebClient().DownloadString("https://freegeoip.net/xml/");
+
+            var responseXml = XDocument.Parse(locationResponse.ToString())
+                .Element("Response");
+
+            string city = responseXml.Element("City").Value.ToString();
+            return city;
+        }
+
+
         private async void Form1_Load(object sender, EventArgs e)
         {    
             try
             {
-                #region GetLocation
-                var locationResponse = new WebClient().DownloadString("https://freegeoip.net/xml/");
-
-                var responseXml = XDocument.Parse(locationResponse.ToString())
-                    .Element("Response");
-
-                string city = responseXml.Element("City").Value.ToString();
-                #endregion
-
+                labelsControl1.Sunrise = "align";
+                labelsControl1.Sunset = "qwewar0";
+                string city = GetLocation();
                 try
                 {
                     OpenWeather Ow = JsonConvert.DeserializeObject<OpenWeather>(await GetWeatherForCityAsync(city));
@@ -360,7 +380,7 @@ namespace Weather
                     
                     GetBackGroundImage(Ow.weather[0].main);
                     GetLabels(Ow, sunrisetime, sunsettime);
-                    LoadToDb();
+                   // LoadToDb();
                 }
                 catch (Exception)
                 {
@@ -374,7 +394,7 @@ namespace Weather
                 textBox1.Clear();
                 try
                 {
-                    ReadFromDb();
+                  //  ReadFromDb();
                 }
                 catch (Exception ex)
                 {
@@ -439,8 +459,18 @@ namespace Weather
 
         private void button2_Click(object sender, EventArgs e)
         {
-            FiveDays weather = new FiveDays();
-            weather.Show();
+            if (textBox1.Text != string.Empty)
+            {
+                Data.Value = textBox1.Text.ToString();
+                FiveDays weather = new FiveDays();
+                weather.Show();
+            }
+            else
+            {
+                Data.Value = GetLocation();
+                FiveDays weather = new FiveDays();
+                weather.Show();
+            }
         }
     }
 }
